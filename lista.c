@@ -48,7 +48,7 @@ int remove_da_lista(lista *l, int pos, brinquedo toy){
         pos--;
     }
     toy = aux->b;
-    /*ver se e o comeÃ§o da lista*/
+    /*ver se e o começo da lista*/
     if(l->inicio == aux){
         l->inicio = l->inicio->prox;
         l->fim->prox = l->inicio;
