@@ -7,6 +7,7 @@
 void cria_lista(lista *l){
     l->inicio = NULL;
     l->fim = NULL;
+    l->tam_lista = 0;
 }
 
 int insere_na_lista(lista *l,brinquedo toy){
@@ -26,17 +27,15 @@ int insere_na_lista(lista *l,brinquedo toy){
     }
     /*com isso a lista fica circular*/
     l->fim->prox = l->inicio;
+    l->tam_lista ++;
     return 0;
 }
 
 int vazia_lista(lista *l){
-    if(l->inicio == NULL){
-        return 1;
-    }
-    return 0;
+    return (l->tam_lista == 0);
 }
 
-int remove_da_lista(lista *l, int pos, brinquedo toy){
+int remove_da_lista(lista *l, int pos, brinquedo *toy){
     if(vazia_lista(l)){
         return 1;
     }
@@ -47,7 +46,7 @@ int remove_da_lista(lista *l, int pos, brinquedo toy){
         aux = aux->prox;
         pos--;
     }
-    toy = aux->b;
+    *toy = aux->b;
     /*ver se e o começo da lista*/
     if(l->inicio == aux){
         l->inicio = l->inicio->prox;
@@ -60,7 +59,17 @@ int remove_da_lista(lista *l, int pos, brinquedo toy){
             l->fim->prox = l->inicio;
         }
     }
+    free(aux);
+    l->tam_lista --;
     return 0;
+}
+
+void imprime_lista(lista l,int tam){
+    while(tam > 0){
+        printf("brinquedo: %d %s\n",l.inicio->b.num_serial,l.inicio->b.nome);
+        l.inicio = l.inicio->prox;
+        tam--;
+    }
 }
 
 #endif // LISTA_C_INCLUDED

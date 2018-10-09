@@ -14,11 +14,13 @@ typedef struct no{
 typedef struct{
     no *inicio;
     no *fim;
+    int tam_lista;
 }lista;
 
 void cria_lista(lista *l);
 int insere_na_lista(lista *l,brinquedo toy);
 int vazia_lista(lista *l);
-int remove_da_lista(lista *l, int pos, brinquedo toy);
+int remove_da_lista(lista *l, int pos, brinquedo *toy);
+void imprime_lista(lista l,int tam);
 
 #endif // LISTA_H_INCLUDED
