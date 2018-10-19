@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "fila.h"
 
+/*Aqui contem a implementação das funções da fila*/
+
 void cria_fila(fila *f){
     f->inicio = NULL;
     f->fim = NULL;

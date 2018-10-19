@@ -1,8 +1,11 @@
 #ifndef FILA_H_INCLUDED
 #define FILA_H_INCLUDED
 #include "pilha.h"
-/*aqui a pilha.h foi incluida pois ja tem
-os recursos necessarios para implementação da fila*/
+
+/*  Aqui a pilha.h foi incluida pois ja tem
+os recursos necessarios para implementação da fila.
+    Nota-se que para a implementação da fila, um novo tipo de nó teve
+de ser criado, onde o tipo de informação contida nele e uma pilha */
 
 typedef struct no_fila{
     pilha p;

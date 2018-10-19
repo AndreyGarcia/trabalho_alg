@@ -1,6 +1,11 @@
 #ifndef LISTA_H_INCLUDED
 #define LISTA_H_INCLUDED
 
+/*  Aqui estão definidos os tipos para o brinquedo, o no e para a lista
+nota-se que temos uma varivel para guardar o tamanho da lista nessa
+implementação.
+    Também estão definidos os cabeçalhos das funções do arquivo lista.c*/
+
 typedef struct{
     int num_serial;
     char nome[50];

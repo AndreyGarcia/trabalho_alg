@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "lista.h"
 
+/*  Aqui estão definidas as funções do TAD de lista para uma lista circular*/
+
 void cria_lista(lista *l){
     l->inicio = NULL;
     l->fim = NULL;
@@ -16,7 +18,7 @@ int insere_na_lista(lista *l,brinquedo toy){
         return 1;
     }
     novo_elemento->b = toy;
-    /*se a fila estiver vazia, o inicio tera que ser atualizado*/
+    /*se a fila estiver vazia, o inicio e o fim terão que ser atualizado*/
     if(l->inicio == NULL){
         l->inicio = novo_elemento;
         l->fim = novo_elemento;
@@ -41,6 +43,7 @@ int remove_da_lista(lista *l, int pos, brinquedo *toy){
     }
     no *aux = l->inicio;
     no *anterior;
+    /*coloca o ponteiro aux na posição a ser removida e o ant na anterior a ele*/
     while(pos-1 > 0){
         anterior = aux;
         aux = aux->prox;
@@ -64,6 +67,7 @@ int remove_da_lista(lista *l, int pos, brinquedo *toy){
     return 0;
 }
 
+/*Esta função foi implementada apenas para teste do funcionamento da lista*/
 void imprime_lista(lista l,int tam){
     while(tam > 0){
         printf("brinquedo: %d %s\n",l.inicio->b.num_serial,l.inicio->b.nome);

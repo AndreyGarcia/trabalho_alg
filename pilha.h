@@ -2,7 +2,7 @@
 #define PILHA_H_INCLUDED
 #include "lista.h"
 
-/*aqui foi incluida a lista.h pois nela ja estao contidas
+/*  Aqui foi incluida a lista.h pois nela ja estao contidas
 as estruturas de no e brinquedo*/
 
 typedef struct{
@@ -14,6 +14,5 @@ void cria_pilha(pilha *p);
 int esta_cheia(pilha *p,int tam_max);
 int push(pilha *p,brinquedo toy);
 int top(pilha *p,brinquedo *toy);
-
 
 #endif // PILHA_H_INCLUDED

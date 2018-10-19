@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "pilha.h"
 
+/*Aqui contem a implementação das funções da pilha*/
+
 void cria_pilha(pilha *p){
     p->num_elementos = 0;
     p->topo = NULL;
@@ -35,6 +37,5 @@ int top(pilha *p,brinquedo *toy){
     *toy = p->topo->b;
     return 0;
 }
-
 
 #endif // PILHA_C_INCLUDED
