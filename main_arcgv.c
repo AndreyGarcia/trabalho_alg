@@ -7,11 +7,11 @@
 
 int main(int argc, char *argv[])
 {
-    /*printf("%d\n",argc);
-    for(int i=0; i<argc; i++){
-        printf("%s\n",argv[i]);
-    }*/
-    int n,k,p;//n = qtd brinq, k = gap, p tam caixa
+    /*Nesta primeira parte do codigo serao inicializadas as variaveis
+    n = quantidade de brinquedos, k = gap, p = tamanho da caixa/pilha
+    atraves do que foi recebido em argv*/
+
+    int n,k,p;
     int count_argv = 1;
     n = atoi(argv[count_argv]);
     count_argv++;
@@ -19,33 +19,40 @@ int main(int argc, char *argv[])
     count_argv++;
     p = atoi(argv[count_argv]);
     count_argv++;
-    //printf("%d %d %d\n",n,k,p);
+
+    /*Nesta segunda parte estão sendo declaradas as variaveis para a esteira
+    e uma do tipo brinquedo para servir de auxilio para coloca-los na lista
+    aqui foi/e será utilizada a função atoi que converte um caractere ascii para int*/
+
     brinquedo b_aux;
     lista esteira;
     cria_lista(&esteira);
     for(int i=0; i<n; i++){
-        b_aux.num_serial = atoi(argv[count_argv]);;
+        b_aux.num_serial = atoi(argv[count_argv]);
         count_argv++;
         strcpy(b_aux.nome,argv[count_argv]);
         count_argv++;
         insere_na_lista(&esteira,b_aux);
-        //printf("brinquedo %d : %d %s\n",i+1,b_aux.num_serial,b_aux.nome);
     }
-    //imprime_lista(esteira,n);
+
+    /*Aqui, com os brinquedos ja na lista serão declaradas uma pilha/caixa auxiliar
+    e uma fila que representa a segunda esteira(fila de caixas)*/
+
     pilha cx_aux;
     cria_pilha(&cx_aux);
     int i = 1;
     fila fila_esteira;
     cria_fila(&fila_esteira);
-    //printf("\n%d\n",esteira.tam_lista);
+
+    /*Neste loop while será feita a remoção dos brinquedos respeitando os gaps e a ordem, nesse caso
+    a variavel b_aux e incializada com o nome do brinquedo como -1, pois se isso não for alterado significa
+    que temos uma caixa vazia no ultimo brinquedo*/
+
     while(!vazia_lista(&esteira)){
-            //printf("iteracao i = %d \n",i);
-            //imprime_lista(esteira,esteira.tam_lista);
             b_aux.num_serial = -1; //incializa, se o ultimo brinquedo nao sair inicializado significa que tem uma caixa
             strcpy(b_aux.nome,"-1");     //para ser empilhada
             if(i <= esteira.tam_lista){
                 remove_da_lista(&esteira,i,&b_aux);
-                //printf("brinquedo removido: %d %s\n",b_aux.num_serial,b_aux.nome);
                 if(!esta_cheia(&cx_aux,p)){     //se a caixa nao esta cheia adiciono nela o brinquedo
                 push(&cx_aux,b_aux);
                 }
@@ -61,7 +68,10 @@ int main(int argc, char *argv[])
                 i = 1;
             }
     }
-    if(strcpy(b_aux.nome,"-1") !=0 ){
+
+    /*Aqui temos o caso de a ultima caixa estar vazia, se ela estiver, não sera empilhada*/
+
+    if(strcmp(b_aux.nome,"-1") !=0 ){
         insere_fila(&fila_esteira,cx_aux);
     }
     while(!remove_fila(&fila_esteira,&cx_aux)){
