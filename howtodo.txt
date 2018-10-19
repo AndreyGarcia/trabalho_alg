@@ -1,0 +1,9 @@
+Aqui estão contidas as informações para a compilação e execução do projeto:
+  O projeto foi programado em linguagem C usando o compilador CodeBlocks versão 17.12 no Windows e está contido na pasta: 
+  .As bibliotecas usadas durante a programação foram stdio.h, stdlib.h e string.h, além das implementadas nos TAD's.
+  Para compila-lo desta forma(visto que a função main recebe argumentos argc,argv[]) basta ir na aba Project e digitar
+  os argumentos no box "Program arguments:" e clicar em OK, depois disso basta clicar no botão verde que indica "Build and Run".
+  Caso esse jeito de compilação apresente algum por problema por alguma circunstancia e possivél compila-lo pelo Linux via terminal
+  através do GCC, para isso use a pasta: como caminho para gerar o executavél.
+  As diretivas de compilação são: gcc -o <nome_executavel> lista.c pilha.c fila.c
+  Para a execução use: ./<nome_executavel> "argumentos"
