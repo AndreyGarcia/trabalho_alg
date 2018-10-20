@@ -76,7 +76,8 @@ int main(int argc, char *argv[])
     }
     while(!remove_fila(&fila_esteira,&cx_aux)){
         top(&cx_aux,&b_aux);
-        printf("brinquedo: %d %s\n",b_aux.num_serial,b_aux.nome);
+        printf("brinquedo: %d %s",b_aux.num_serial,b_aux.nome);
+        printf(", quantidade : %d\n",cx_aux.num_elementos);
     }
 
 
