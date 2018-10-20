@@ -4,6 +4,13 @@
 #include <stdlib.h>
 #include "fila.h"
 
+void imprimetopofila(fila *f){
+    for(int i=0; i< f->fim; i++){
+        printf("caixa %d: %d %s, quantidade %d\n",i,f->vet[i].vet[f->vet[i].topo].num_serial,f->vet[i].vet[f->vet[i].topo].nome,f->vet[i].num_elementos);
+    }
+    printf("\n");
+}
+
 void cria_fila(fila *f) {
     f->ini = 0;
     f->fim = 0;

@@ -38,7 +38,6 @@ int remove_da_lista(lista *l, int *pos, brinquedo *toy){
         *pos = *pos + 1;
     }
     *toy = l->vet[*pos];
-    printf("brinquedo saindo da lista: %d %s\n",toy->num_serial,toy->nome);
     strcpy(l->vet[*pos].nome,"-2");
     l->tam_lista--;
     return 0;

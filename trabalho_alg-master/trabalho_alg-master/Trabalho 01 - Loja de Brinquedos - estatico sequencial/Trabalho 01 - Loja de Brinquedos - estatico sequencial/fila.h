@@ -16,5 +16,5 @@ int insere_fila(fila *f, pilha cx);
 int remove_fila(fila *f, pilha *cx);
 int vazia_fila(fila *f);
 int cheia_fila(fila *f);
-
+void imprimetopofila(fila *f);
 #endif // FILA_H_INCLUDED

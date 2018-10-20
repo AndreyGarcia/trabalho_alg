@@ -91,29 +91,28 @@
 	"pilha.h"
 	"fila.h"
 
-1539982749 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\fila.c
+1540011428 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\fila.c
 	<stdio.h>
 	<stdlib.h>
 	"fila.h"
 
-1539982839 c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\fila.h
+1540011131 c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\fila.h
 	<stdio.h>
 	"pilha.h"
 
-1539983549 c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\pilha.h
-	<stdio.h>
+1540007755 c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\pilha.h
 	"lista.h"
 
 1539981139 c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\lista.h
 	<stdio.h>
 
-1539982269 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\lista.c
+1540011664 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\lista.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"lista.h"
 
-1539983440 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\main.c
+1540011664 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -121,8 +120,7 @@
 	"pilha.h"
 	"fila.h"
 
-1539983440 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\pilha.c
-	<stdio.h>
+1540009351 source:c:\users\andre\onedrive\desktop\trabalho_alg-master\trabalho_alg-master\trabalho 01 - loja de brinquedos - estatico sequencial\trabalho 01 - loja de brinquedos - estatico sequencial\pilha.c
 	<stdlib.h>
 	"pilha.h"
 

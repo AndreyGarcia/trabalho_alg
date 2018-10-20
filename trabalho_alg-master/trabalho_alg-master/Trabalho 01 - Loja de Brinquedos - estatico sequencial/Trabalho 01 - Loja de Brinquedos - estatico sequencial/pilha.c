@@ -1,8 +1,14 @@
 #ifndef PILHA_C_INCLUDED
 #define PILHA_C_INCLUDED
-#include <stdio.h>
 #include <stdlib.h>
 #include "pilha.h"
+
+int isfull_pilha(pilha *p){
+    if(p->num_elementos >= p->tam_caixa){
+        return 1;
+    }
+    return 0;
+}
 
 void cria_pilha(pilha *p,int tam){
     p->tam_caixa = tam;
@@ -32,12 +38,5 @@ int top(pilha *p, brinquedo *toy){
     return 0;
 }
 
-int cheia_pilha(pilha *p){
-    if(p->num_elementos == 2){
-        printf("CAIXA CHEIA INDO PARA A PROXIMA\n");
-        return 1;
-    }
-    return 0;
-}
 
 #endif // PILHA_C_INCLUDED
