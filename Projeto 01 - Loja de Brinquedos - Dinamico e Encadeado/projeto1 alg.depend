@@ -1,0 +1,94 @@
+# depslib dependency file v1.0
+1539119898 source:c:\users\andre\onedrive\desktop\projeto1 alg\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	"pilha.h"
+	"fila.h"
+
+1539119157 source:c:\users\andre\onedrive\desktop\projeto1 alg\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1539114173 c:\users\andre\onedrive\desktop\projeto1 alg\lista.h
+
+1538842295 source:c:\users\andre\onedrive\desktop\projeto1 alg\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1538842411 c:\users\andre\onedrive\desktop\projeto1 alg\pilha.h
+	"lista.h"
+
+1538846422 source:c:\users\andre\onedrive\desktop\projeto1 alg\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1538846475 c:\users\andre\onedrive\desktop\projeto1 alg\fila.h
+	"pilha.h"
+
+1539958628 source:c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1539958580 c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\fila.h
+	"pilha.h"
+
+1539958628 c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\pilha.h
+	"lista.h"
+
+1539958215 c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\lista.h
+
+1539958628 source:c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1539958628 source:c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1539957572 source:c:\users\andre\onedrive\desktop\porjeto alg 2 teste\projeto1 alg\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	"pilha.h"
+	"fila.h"
+
+1539958628 source:c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1539958580 c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\fila.h
+	"pilha.h"
+
+1539958628 c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\pilha.h
+	"lista.h"
+
+1540302303 c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\lista.h
+
+1539958628 source:c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1540239869 source:c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	"pilha.h"
+	"fila.h"
+
+1539958628 source:c:\users\andre\onedrive\desktop\projeto 01 - loja de brinquedos - dinamico e encadeado\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
